@@ -2,7 +2,10 @@
 # Cleaning Welsh CLA (at 31st March) 2003 - 2018 #
 #------------------------------------------------#
 
-# data source: https://statswales.gov.wales/Catalogue/Health-and-Social-Care/Social-Services/Childrens-Services/Children-Looked-After/childrenlookedafterat31march-by-localauthority-gender-age
+# data sources: 
+# 1) https://statswales.gov.wales/Catalogue/Health-and-Social-Care/Social-Services/Childrens-Services/Children-Looked-After/childrenlookedafterat31march-by-localauthority-gender-age
+# 2) https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/migrationwithintheuk/datasets/userinformationenglandandwaleslocalauthoritytoregionlookup
+
 
 #-------------------#
 # set up  ----
@@ -19,7 +22,10 @@ library(snakecase)
 library(purrr)
 
 # download data from github to folder and set this as working directory
-setwd("N:/Documents/Data & Programming/Public data/Welsh CLA/")
+# 1) CLA_31MAR_2003.csv - CLA_31MAR_2018.csv (data on welsh entries to care)
+# 2) lasregionnew2019.xlsx (England & Wales local authority names and codes)
+
+setwd("YOUR FILEPATH")
 
 #-------------------#
 # get data files ----
