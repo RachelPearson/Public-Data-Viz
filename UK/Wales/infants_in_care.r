@@ -38,9 +38,8 @@ pop_dat <- read.csv("mid_year_population_estimates_series_UK_2000_to_2017.csv", 
 
 
 
-# download welsh cla data from github:
-githubURL <- ("https://raw.githubusercontent.com/.rds")
-download.file(githubURL,"clean_wales_CLA_31MAR_2003_2018.rds", method="curl")
+# download cleaned welsh cla data from github
+# https://github.com/RachelPearson/Public-Data-Viz/blob/master/UK/Wales/clean_wales_CLA_31MAR_2003_2018.rds
 
 # welsh cla for U1s (in care as at 31st March):
 cla_wales_clean_U1 <- readRDS("clean_wales_CLA_31MAR_2003_2018.rds") %>% 
